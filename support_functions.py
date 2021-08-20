@@ -134,3 +134,10 @@ def put_index_labels(surface, font):
 		x_coord_label = i * (MARGIN_THICKNESS + GRID_WIDTH)
 		y_coord_label = (MARGIN_THICKNESS + GRID_HEIGHT) * NROWS + 3
 		surface.blit(textsurface, (x_coord_label, y_coord_label))
+
+
+def draw_text(text, font, color, surface, x, y):
+    textobj = font.render(text, 1, color)
+    textrect = textobj.get_rect()
+    textrect.topleft = (x, y)
+    surface.blit(textobj, textrect)
