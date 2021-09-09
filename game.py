@@ -5,7 +5,6 @@ import support_functions as sf
 
 class Game:
 	def __init__(self):
-
 		pygame.init()
 		pygame.display.set_icon(pygame.image.load(LOGO_PATH))
 		pygame.display.set_caption(SOFTWARE_CAPTION)
