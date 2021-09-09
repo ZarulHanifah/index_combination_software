@@ -1,10 +1,11 @@
 # SYL Index Combination Software
 
 Coming up with index combinations is not trivial, because one has to think of how to:
-	- Combine pairwise indices
-	- In a way that increases base diversity
-	- And practical in the lab (eg: multichannel pipetting)
-	- All this while avoiding index clashes with samples requiring topup from previous runs
+* Combine pairwise indices
+* In a way that increases base diversity
+* And practical in the lab (eg: multichannel pipetting)
+* All this while avoiding index clashes with samples requiring topup from previous runs
+	
 This mental is usually done in one's head, so communicating the constraints of index combination in a run is also another hassle.
 
 Since index combination is usually pairwise (forward and reverse index, at least for Nextera and NEB), then the easiest way of doing index combination is thinking tick-tack-toe. And if it can read previous sample sheet to indicate where index combinations have been used that can clash, even better.
