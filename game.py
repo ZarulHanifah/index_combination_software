@@ -1,7 +1,7 @@
 import sys
 import pygame
-from world_constants import *
-import support_functions as sf
+from index_combination.world_constants import *
+import index_combination.support_functions as sf
 
 class Game:
 	def __init__(self):

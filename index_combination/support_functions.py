@@ -1,4 +1,5 @@
-from world_constants import *
+import sys
+from index_combination.world_constants import *
 import pandas as pd
 import numpy as np
 import pygame
@@ -48,7 +49,8 @@ def get_index_coordinates_clash_list(sample_sheet):
 		try:
 			xcoord, ycoord = I7_LIST.index(i7), I5_LIST.index(i5)
 		except:
-			pass
+			print(f"i7 {i7} or i5 {i5} not found")
+			continue
 		index_coordinates_clash_list.append((xcoord, ycoord))
 	return index_coordinates_clash_list
 
